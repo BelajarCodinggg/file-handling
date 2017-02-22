@@ -6,6 +6,7 @@ from functools import wraps
 mysql = MySql()'''
 
 app = Flask(__name__)
+
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 app.config['ALLOWED_EXTENSIONS'] = set(['html', 'py'])
 app.secret_key = 'some_secret'
